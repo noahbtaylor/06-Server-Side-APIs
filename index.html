@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    /> <!--Using Bootstrap library-->
+    <script src="https://kit.fontawesome.com/7a58e32a8e.js" crossorigin="anonymous"></script>
+    <!--Using FontAwesome library for Icons-->
+    <link rel="stylesheet" href="./Develop/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body class="flex-column min-100-vh">
+    
+    <header class="text-bg-primary text-center">
+      <h1 class>
+        <i class="fa-sharp fa-solid fa-sun"></i><span class="header">Weather App</span><i class="fa-sharp fa-solid fa-cloud"></i>
+      </h1>
+    </header>
+    <div class="row">
+      <div class="col-sm-4">
+        <form id="user-form">
+          <div class="mb-3 border-bottom border-dark">
+            <label for="exampleInputEmail1" class="form-label"><span id="city1">Search for a City:</span></label>
+            <input type="text" class="form-control" id="userCity" placeholder="Ex:Dallas">
+          <br>
+          <button type="submit" class="btn btn-primary" id="userSearchbtn">Search</button>
+        </div>
+        </form>
+        <div class="container btn-group-vertical" id="pastSearches">
+          <div>
+            Past Searches
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="container" id="currentDay" hidden>
+          <div class="border border-dark" id="cityData">
+           <h1 id="city">CityName </h1> 
+           <span id="date"></span>
+           <br>
+           <img id="icon"></img>
+           <p>Temp:<span id="temp"></span></p>
+           <br>
+           <p >Wind:<span id="wind"></span></p>
+           <br>
+           <p>Humidity:<span id="humid"></span></p>
+          </div>
+        </div>
+        <div id="cards" hidden>
+        <h3 class="text-center">5-Day Forecast</h3>
+        <div class="row">
+            <div class="card p-1 col-sm-2 m-3 bg-primary text-light text-center" id="day-1"></div>
+            <div class="card p-2 col-sm-2 m-3 bg-primary text-light text-center" id="day-2"></div>
+            <div class="card p-2 col-sm-2 m-3 bg-primary text-light text-center" id="day-3"></div>
+            <div class="card p-2 col-sm-2 m-3 bg-primary text-light text-center" id="day-4"></div>
+            <div class="card p-2 col-sm-2 m-3 bg-primary text-light text-center" id="day-5"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--Using jQuery-->
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
+    <!--Using day JS for date-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Develop/main.js"></script>
+  </body>
+</html>

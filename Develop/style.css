@@ -1,0 +1,51 @@
+#city1,
+#city {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(348, 88%, 66%, 1) 0%,
+    hsla(36, 89%, 68%, 1) 100%
+  );
+}
+
+.header {
+  margin: 2rem;
+}
+
+#date {
+  float: left;
+}
+
+#icon {
+  width: 100px;
+  float: right;
+}
+
+#city {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#date,
+#wind,
+#humid,
+#temp {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p {
+  text-decoration: underline;
+}
+
+.card {
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+
+img {
+  text-align: center;
+}
