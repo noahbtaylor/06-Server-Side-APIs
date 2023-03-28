@@ -17,3 +17,5 @@ Fetching from the open weather API allowed me to understand the build in fetch m
 jQuery, BootStrap, DayJS, OpenWeatherAPI
 
 ## Deployed Link
+
+https://noahbtaylor.github.io/06-Server-Side-APIs/
